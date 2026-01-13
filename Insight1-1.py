@@ -49,7 +49,7 @@ total_india = state_totals.sum()
 state_percent = (state_totals / total_india) * 100
 
 # Plot
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(12,6))
 ax = state_percent.sort_values(ascending=False).plot(kind='bar')
 for container in ax.containers:
     ax.bar_label(container, fmt='%.1f%%')
