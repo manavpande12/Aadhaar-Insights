@@ -82,16 +82,3 @@ if not duplicate_load_shadow.empty:
             (shadow_details['bio_age_17_'] == sample['bio_age_17_'])
         ] .sort_values('date') [['date', 'pincode', 'bio_age_5_17', 'bio_age_17_']].to_string(index=False)
     )
-
-print("\nSUMMARY)")
-print("=====================================================================================")
-print(
-    "This analysis found a hidden issue in the Aadhaar biometric update data.\n"
-    "For many pincodes, the same biometric values are repeated on multiple different dates,\n"
-    "which should not happen in real-life updates. Biometric updates are event-based, so the\n"
-    "numbers should change over time. This repeating pattern strongly suggests duplicate data\n"
-    "loading or replay during data processing.\n"
-    "Identifying these repeated patterns helps detect data quality problems early and makes\n"
-    "the system more reliable and accurate.",
-    
-)

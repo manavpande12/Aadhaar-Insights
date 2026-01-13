@@ -47,12 +47,6 @@ plt.ylabel("Share of Enrolments (%)")
 plt.tight_layout()
 plt.show()
 
-# North India is driving most of the new Aadhaar enrolments, mainly because states like Uttar Pradesh and Bihar have large populations.
-# Southern states are adding fewer new users because most people already have Aadhaar, while the Northeast stays low due to small populations and harder-to-reach areas.
-# This uneven growth can cause problems later — crowded enrolment centres in big states and slow access in remote places.
-# To fix this, India needs more mobile enrolment teams, better digital systems in villages, and smarter data checks. This will help make Aadhaar easier to get for everyone, no matter where they live.
-
-
 # Insight B
 df['month_name'] = df['date'].dt.month_name()
 month_order = [
@@ -74,9 +68,3 @@ plt.ylabel("Total Enrolments")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-
-# The observed peaks in Aadhaar enrolments during September to November indicate periods of increased demand, 
-# likely driven by government enrolment drives and administrative deadlines. 
-# During these months, higher staffing levels and extended enrolment operations would be required to efficiently manage the workload. 
-# In contrast, months showing zero enrolments, such as January, February, and August, 
-# are the result of data unavailability or reporting gaps rather than a complete halt in enrolment activities or reduced staffing.

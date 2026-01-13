@@ -79,9 +79,3 @@ if not spike_dates.empty:
 
 plt.tight_layout()
 plt.show()
-
-
-# The data shows a very large increase in Aadhaar updates on 1 March 2025. This increase happened only for one day and then quickly returned to normal levels. 
-# This means the spike was likely caused by a planned government activity or deadline, not by regular daily demand. 
-# Most of the updates came from a few big and well-equipped districts, while many other districts contributed much less. 
-# Overall, the system handled the sudden workload well, but the results show that Aadhaar update capacity is uneven across districts.
